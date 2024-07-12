@@ -1,0 +1,130 @@
+#product {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: wheat;
+  background: linear-gradient(rgba(0, 25, 8, 0), rgba(0, 25, 10, 0.589)),
+    url(/img/woods-7857082_1280.webp);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  z-index: 8;
+}
+
+.products {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.productBox {
+  width: 600px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  background-color: rgba(240, 248, 255, 0);
+  filter: drop-shadow(0px 10px 10px rgb(0, 0, 0));
+  clip-path: polygon(2% 10%, 100% 0%, 100% 0%, 92% 100%, 8% 97%, 0% 58%);
+  margin: 0px 10px 0px 10px;
+}
+
+@keyframes zoomAndDarken {
+  0% {
+    transform: scale(1);
+    filter: brightness(80%);
+  }
+  100% {
+    transform: scale(1.1);
+    filter: brightness(50%);
+  }
+}
+
+@keyframes zoomAndLighten {
+  0% {
+    transform: scale(1);
+    filter: brightness(50%);
+  }
+  100% {
+    transform: scale(1.1);
+    filter: brightness(80%);
+  }
+}
+
+.productBox video {
+  width: 100%;
+  animation: zoomAndDarken 0.5s forwards;
+}
+
+.productBox video:hover {
+  animation: zoomAndLighten 0.5s forwards;
+  cursor: pointer;
+}
+
+.productDescription {
+  position: absolute;
+  color: rgba(240, 248, 255, 0.829);
+  font-size: 50px;
+  z-index: 5;
+}
+
+.productDescription:hover {
+  animation: zoomAndLighten 0.5s forwards;
+  color: aliceblue;
+  cursor: pointer;
+}
+
+.SectionOne {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.SectionTwo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (max-width: 1044px) {
+  .products a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+  }
+
+  .productBox {
+    margin-top: 10px;
+    width: 100%;
+  }
+
+  .productDescription {
+    font-size: 40px;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .productDescription {
+    font-size: 30px;
+  }
+
+  .SectionOne {
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+
+  .SectionTwo {
+    flex-direction: column;
+  }
+
+  .productBox {
+    margin-top: 10px;
+    width: 80%;
+  }
+}

@@ -1,0 +1,140 @@
+#investors {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  background-color: #f0f0f000;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#investors::before,
+#investors::after {
+  content: "";
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background-color: rgba(59, 129, 18, 0.603);
+  border-radius: 60%;
+}
+
+#investors::before {
+  top: -50px;
+  left: -50px;
+  clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+  transform: rotate(37deg);
+}
+
+#investors::after {
+  bottom: -50px;
+  right: -50px;
+  clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+  transform: rotate(-45deg);
+}
+
+.investmentImg {
+  width: 50%;
+  height: auto;
+}
+
+.investmentImg:hover {
+  filter: brightness(110%);
+  scale: 1.02;
+  transition: 0.7s;
+  transform: rotate(02deg);
+}
+
+.texArea {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 45%;
+}
+
+.titleBox {
+  background-color: rgba(59, 129, 18, 0.603);
+  color: rgb(253, 244, 227);
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  width: 55%;
+  border-radius: 5px;
+}
+
+.investingText {
+  margin-top: 30px;
+  width: 55%;
+  font-size: 20px;
+  text-align: right;
+  color: rgba(0, 0, 0, 0.623);
+}
+
+h1 {
+  margin-bottom: 5px;
+  font-size: 40px;
+  text-align: right;
+  font-weight: 400;
+}
+
+.boldTitle {
+  font-weight: bolder;
+  color: white;
+}
+
+.moreAboutButton {
+  background-color: rgba(59, 129, 18, 0.603);
+  color: rgb(253, 244, 227);
+  border: none;
+  border-radius: 10px;
+  width: 160px;
+  font-size: 25px;
+  margin-top: 40px;
+  position: left;
+  padding: 5px;
+}
+
+.moreAboutButton:hover {
+  scale: 1.1;
+  font-weight: bolder;
+  background-color: rgb(248, 180, 54);
+  transition: 0.7s;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 1044px) {
+  #investors {
+    flex-direction: column;
+  }
+
+  .investmentImg {
+    width: 60%;
+  }
+
+  .texArea {
+    width: 70%;
+  }
+
+  .investingText {
+    width: 95%;
+    text-align: center;
+    font-size: 15px;
+    margin-top: 15px;
+  }
+
+  .titleBox {
+    width: 95%;
+  }
+
+  h1 {
+    text-align: center;
+    font-size: 25px;
+  }
+
+  .moreAboutButton {
+    margin-top: 20px;
+    font-size: 20px;
+    width: 150px;
+  }
+}

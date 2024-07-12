@@ -1,0 +1,65 @@
+.buttonsBar {
+  position: fixed;
+  bottom: 400px;
+  left: 5px;
+  display: grid;
+  justify-content: left;
+  margin: auto;
+  align-items: center;
+  gap: 2%;
+  z-index: 10;
+}
+
+.buttonsBar a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  font-size: 26px;
+  width: 55px;
+  height: 55px;
+  line-height: 60px;
+  text-align: center;
+  background: rgba(7, 14, 7, 0.514);
+  color: antiquewhite;
+  border-radius: 50%;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.363);
+  transition: all 0.4s ease-in-out;
+}
+
+.buttonsBar a:hover {
+  color: rgb(59, 129, 18);
+  scale: 1.1;
+}
+
+@media only screen and (max-width: 1400px) {
+  .buttonsBar a {
+    width: 40px;
+    height: 40px;
+  }
+
+  .buttonsBar {
+    bottom: 300px;
+    gap: 4%;
+    scale: 0.85;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .buttonsBar {
+    bottom: 300px;
+    gap: 4%;
+    scale: 0.8;
+  }
+
+  .buttonsBar a {
+    width: 35px;
+    height: 35px;
+  }
+}
+
+@media only screen and (max-height: 700px) {
+  .buttonsBar {
+    bottom: 200px;
+  }
+}
