@@ -28,7 +28,7 @@
   justify-content: center;
   align-items: center;
   border-radius: 20px;
-  background-color: rgba(240, 248, 255, 0);
+  background-color: rgba(0, 37, 6, 0.5);
   filter: drop-shadow(0px 10px 10px rgb(0, 0, 0));
   clip-path: polygon(2% 10%, 100% 0%, 100% 0%, 92% 100%, 8% 97%, 0% 58%);
   margin: 0px 10px 0px 10px;
