@@ -23,9 +23,9 @@ const Investors: React.FC = () => {
           Invest in Medellín's premier destination for affordable living and
           lucrative investment opportunities. We offer diverse accommodations
           and seamless services to ensure a smooth transition to Colombian life.
-          Focused on projects building rural housing, our investment
-          opportunities promise growth in Colombia's thriving economy. Join us
-          to expand our business and be part of a dynamic and growing venture.
+          We have projects building rural housing, our investment opportunities
+          promise growth in Colombia's thriving economy. Join us to expand our
+          business and be part of a dynamic and growing venture.
         </p>
         <HashLink smooth to="/dating">
           <button className="moreAboutButton">Learn more</button>

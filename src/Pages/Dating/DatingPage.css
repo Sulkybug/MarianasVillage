@@ -5,10 +5,21 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  background: linear-gradient(rgba(0, 25, 8, 0.726), rgba(0, 25, 10, 0.589)),
+    url(/img/medellin-2723824_1280.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 form {
   display: flex;
   justify-content: center;
   flex-direction: column;
+}
+
+@media only screen and (max-width: 650px) {
+  form {
+    width: 70%;
+  }
 }

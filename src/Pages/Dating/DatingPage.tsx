@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Navbar from "../../Components/Navbar/Navbar";
 import Footer from "../../Components/Footer/Footer";
+import LateralBar from "../../Components/LateralBar/LateralBar";
 import "./DatingPage.css";
 import { useForm, SubmitHandler } from "react-hook-form";
 import { FaPaperPlane } from "react-icons/fa";
@@ -122,6 +123,7 @@ const DatingPage: React.FC = () => {
           </button>
         </form>
       </div>
+      <LateralBar />
       <Footer />
     </div>
   );

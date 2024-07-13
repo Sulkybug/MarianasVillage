@@ -2,6 +2,7 @@ import React from "react";
 import { useState } from "react";
 import Navbar from "../Components/Navbar/Navbar";
 import Footer from "../Components/Footer/Footer";
+import LateralBar from "../Components/LateralBar/LateralBar";
 import "./AboutUsPage.css";
 
 const AboutUsPage: React.FC = () => {
@@ -28,6 +29,7 @@ const AboutUsPage: React.FC = () => {
           </p>
         </div>
       </div>
+      <LateralBar />
       <Footer />
     </div>
   );
