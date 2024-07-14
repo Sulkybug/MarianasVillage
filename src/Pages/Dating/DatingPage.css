@@ -5,21 +5,109 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background: linear-gradient(rgba(0, 25, 8, 0.726), rgba(0, 25, 10, 0.589)),
-    url(/img/medellin-2723824_1280.jpg);
+  background: linear-gradient(rgba(0, 25, 8, 0.89), rgba(0, 25, 10, 0.548)),
+    url(/img/sunsetDating.jpg);
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
+}
+
+.titleformDating {
+  margin-top: 20px;
+  color: aliceblue;
+  font-weight: bold;
+}
+
+.formBox {
+  background-color: rgba(253, 156, 76, 0.425);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+hr {
+  width: 95%;
+  color: aliceblue;
 }
 
 form {
+  padding: 50px 20px 50px 20px;
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-direction: column;
+}
+
+input {
+  margin-bottom: 5px;
+  background-color: rgba(255, 254, 254, 0.63);
+  width: 100%;
+  border: 1px;
+  border-radius: 5px;
+  padding: 2px;
+}
+
+textarea {
+  margin-bottom: 25px;
+  background-color: rgba(255, 254, 254, 0.63);
+  width: 100%;
+  border: 1px;
+  border-radius: 5px;
+  padding: 2px;
+}
+
+.sendMessage {
+  width: 160px;
+  font-size: 20px;
+  padding: 5px;
+  border-radius: 10px;
+  border: 1px;
+  background-color: rgba(18, 125, 129, 0.774);
+  color: rgb(253, 244, 227);
+}
+
+.sendMessage:hover {
+  scale: 1.1;
+  font-weight: bolder;
+  background-color: rgb(59, 17, 10);
+  transition: 0.7s;
+  cursor: pointer;
+}
+
+.text-red {
+  font-weight: 600;
+  width: 100%;
+  color: rgb(59, 17, 10);
+  margin-bottom: 4px;
+}
+
+legend {
+  width: 100%;
+}
+
+.options {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  margin-bottom: 10px;
 }
 
 @media only screen and (max-width: 650px) {
   form {
+    width: 95%;
+  }
+
+  .formBox {
     width: 70%;
+  }
+
+  .sendMessage {
+    width: 150px;
+  }
+
+  #dating {
+    background-size: cover;
   }
 }
