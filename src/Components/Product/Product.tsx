@@ -37,7 +37,7 @@ const Product: React.FC = () => {
           </HashLink>
         </div>
         <div className="SectionTwo">
-          <HashLink smooth to="/dating">
+          <HashLink smooth to="/dating/#dating">
             <div className="productBox">
               <h2 className="productDescription">Dating</h2>
               <LazyLoad height={200} offset={100}>

@@ -8,8 +8,12 @@ import { useForm, SubmitHandler } from "react-hook-form";
 type Inputs = {
   name: string;
   email: string;
-  Subject: string;
+  cellphone: string;
+  contactMethod: string;
   gender: string;
+  eventInterest: string;
+  lookingFor: string;
+  relationshipType: string;
   message: string;
 };
 
@@ -61,6 +65,10 @@ const DatingPage: React.FC = () => {
         <div className="formBox">
           <h1 className="titleformDating">Find Love in Colombia</h1>
           <hr />
+          <p className="datingFormDescription">
+            Interested in dating in Colombia? Fill out this form to receive more
+            information about our services.
+          </p>
           <form onSubmit={handleSubmit(onSubmit)}>
             {errors.name && (
               <div className="text-red">{errors.name.message}</div>
@@ -92,62 +100,86 @@ const DatingPage: React.FC = () => {
               id="email"
               placeholder="Email address"
             />
-            {errors.Subject && (
-              <div className="text-red">{errors.Subject.message}</div>
+            {errors.cellphone && (
+              <div className="text-red">{errors.cellphone.message}</div>
             )}
             <input
-              {...register("Subject", { required: "A subject is required" })}
-              type="text"
-              id="Subject"
-              placeholder="Subject"
+              {...register("cellphone", {
+                required: "Phone number is required",
+                pattern: {
+                  value: /^\+?[1-9]\d{6,14}(?:[-\s]?\d{1,4}){0,3}$/,
+                  message: "Invalid phone number",
+                },
+              })}
+              type="tel"
+              id="cellphone"
+              placeholder="Phone number"
             />
+
+            <legend>Best way to contact you</legend>
+            {errors.contactMethod && (
+              <div className="text-red">{errors.contactMethod.message}</div>
+            )}
+            <select
+              {...register("contactMethod", { required: "Select an option" })}
+            >
+              <option value="">Select an option</option>
+              <option value="email">Email</option>
+              <option value="phone">Phone</option>
+            </select>
+
+            <legend>Gender</legend>
             {errors.gender && (
               <div className="text-red">{errors.gender.message}</div>
             )}
-            <legend>Gender</legend>
-            <div className="options">
-              <div>
-                <input
-                  {...register("gender", { required: "Select an option" })}
-                  type="radio"
-                  id="male"
-                  value="male"
-                  name="gender"
-                />
-                <label htmlFor="male">Male</label>
-              </div>
-              <div>
-                <input
-                  {...register("gender", { required: "Select an option" })}
-                  type="radio"
-                  id="female"
-                  value="female"
-                  name="gender"
-                />
-                <label htmlFor="female">Female</label>
-              </div>
-              <div>
-                <input
-                  {...register("gender", { required: "Select an option" })}
-                  type="radio"
-                  id="noAnswer"
-                  value="noAnswer"
-                  name="gender"
-                />
-                <label htmlFor="noAnswer">Rather not say</label>
-              </div>
-            </div>
-            {errors.message && (
-              <div className="text-red">{errors.message.message}</div>
+            <select {...register("gender", { required: "Select an option" })}>
+              <option value="">Select an option</option>
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+              <option value="noAnswer">Rather not say</option>
+            </select>
+
+            <legend>How interested are you in attending an event?</legend>
+            {errors.eventInterest && (
+              <div className="text-red">{errors.eventInterest.message}</div>
             )}
-            <textarea
-              {...register("message", {
-                required: "Write a message please",
-                minLength: {
-                  value: 8,
-                  message: "Message is too short to be sent",
-                },
+            <select
+              {...register("eventInterest", { required: "Select an option" })}
+            >
+              <option value="">Select an option</option>
+              <option value="veryInterested">Very interested</option>
+              <option value="somewhatInterested">Somewhat interested</option>
+              <option value="notInterested">Not interested</option>
+            </select>
+
+            <legend>Looking for</legend>
+            {errors.lookingFor && (
+              <div className="text-red">{errors.lookingFor.message}</div>
+            )}
+            <select
+              {...register("lookingFor", { required: "Select an option" })}
+            >
+              <option value="">Select an option</option>
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+            </select>
+
+            <legend>Looking for a long-term relationship?</legend>
+            {errors.relationshipType && (
+              <div className="text-red">{errors.relationshipType.message}</div>
+            )}
+            <select
+              {...register("relationshipType", {
+                required: "Select an option",
               })}
+            >
+              <option value="">Select an option</option>
+              <option value="yes">Yes</option>
+              <option value="no">No</option>
+              <option value="notSure">Not sure</option>
+            </select>
+            <textarea
+              {...register("message", {})}
               id="message"
               cols={80}
               rows={6}

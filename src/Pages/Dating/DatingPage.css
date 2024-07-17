@@ -1,25 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
 #dating {
-  height: 100vh;
+  height: 110vh;
   width: 100vw;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background: linear-gradient(rgba(0, 25, 8, 0.89), rgba(0, 25, 10, 0.548)),
-    url(/img/sunsetDating.jpg);
+  background: url(/img/sunsetDating.jpg);
   background-size: cover;
   background-position: center;
 }
 
 .titleformDating {
-  margin-top: 20px;
+  margin-top: 30px;
   color: aliceblue;
   font-weight: bold;
 }
 
 .formBox {
-  background-color: rgba(253, 156, 76, 0.425);
-  border-radius: 10px;
+  background: linear-gradient(rgba(59, 129, 18, 0.603), rgba(0, 17, 0, 0.9));
+  border-radius: 15px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -32,7 +32,7 @@ hr {
 }
 
 form {
-  padding: 50px 20px 50px 20px;
+  padding: 30px 20px 50px 20px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -41,7 +41,7 @@ form {
 
 input {
   margin-bottom: 5px;
-  background-color: rgba(255, 254, 254, 0.63);
+  background-color: rgba(255, 254, 254, 0.575);
   width: 100%;
   border: 1px;
   border-radius: 5px;
@@ -50,11 +50,12 @@ input {
 
 textarea {
   margin-bottom: 25px;
-  background-color: rgba(255, 254, 254, 0.63);
+  background-color: rgba(255, 254, 254, 0.575);
   width: 100%;
   border: 1px;
   border-radius: 5px;
   padding: 2px;
+  height: 50px;
 }
 
 .sendMessage {
@@ -78,36 +79,91 @@ textarea {
 .text-red {
   font-weight: 600;
   width: 100%;
-  color: rgb(59, 17, 10);
+  color: rgb(53, 13, 6);
   margin-bottom: 4px;
+  text-shadow: rgba(229, 255, 0, 0.897) 2px 0px 10px;
 }
 
 legend {
   width: 100%;
+  color: aliceblue;
+  margin: 2px 0px 5px 0px;
 }
 
-.options {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+.datingFormDescription {
+  color: aliceblue;
+  margin-top: 10px;
+  width: 85%;
+  text-align: center;
+}
+
+input,
+select {
+  margin-bottom: 5px;
+  background-color: rgba(255, 254, 254, 0.575);
   width: 100%;
-  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 2px;
+}
+
+select {
+  color: #000; /* Default text color */
+}
+
+option:checked {
+  color: #fff;
+  background-color: rgb(59, 17, 10);
+}
+
+select:active,
+select:hover {
+  outline-color: rgb(225, 250, 0);
+  color: rgb(0, 0, 0);
+  font-weight: 550;
+  background-color: rgba(255, 254, 254, 0.849);
 }
 
 @media only screen and (max-width: 650px) {
+  #dating {
+    height: 120vh;
+  }
   form {
     width: 95%;
+    padding: 15px 15px 20px 15px;
   }
 
   .formBox {
-    width: 70%;
+    margin-top: 40px;
+    width: 75%;
+    overflow: auto;
   }
 
   .sendMessage {
-    width: 150px;
+    width: 130px;
+    font-size: 15px;
   }
 
   #dating {
     background-size: cover;
+  }
+
+  .titleformDating {
+    font-size: 22px;
+    margin-top: 20px;
+  }
+
+  legend {
+    font-size: 14px;
+  }
+
+  .text-red {
+    font-size: 15px;
+  }
+
+  .datingFormDescription {
+    font-size: 13px;
+    width: 75%;
+    text-align: left;
   }
 }
