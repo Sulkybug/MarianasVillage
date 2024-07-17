@@ -164,7 +164,7 @@ const DatingPage: React.FC = () => {
               <option value="female">Female</option>
             </select>
 
-            <legend>Looking for a long-term relationship?</legend>
+            <legend>What are you exited to find here?</legend>
             {errors.relationshipType && (
               <div className="text-red">{errors.relationshipType.message}</div>
             )}
@@ -174,8 +174,8 @@ const DatingPage: React.FC = () => {
               })}
             >
               <option value="">Select an option</option>
-              <option value="yes">Yes</option>
-              <option value="no">No</option>
+              <option value="long-term">Long-term relationship</option>
+              <option value="casual">Getting to know people</option>
               <option value="notSure">Not sure</option>
             </select>
             <textarea

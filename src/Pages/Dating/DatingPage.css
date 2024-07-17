@@ -107,15 +107,14 @@ select {
   padding: 2px;
 }
 
-select {
-  color: #000; /* Default text color */
-}
-
 option:checked {
   color: #fff;
   background-color: rgb(59, 17, 10);
 }
-
+input:hover,
+input:active,
+textarea:hover,
+textarea:active,
 select:active,
 select:hover {
   outline-color: rgb(225, 250, 0);
