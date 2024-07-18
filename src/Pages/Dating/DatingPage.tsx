@@ -39,7 +39,7 @@ const DatingPage: React.FC = () => {
       await new Promise((resolve) => setTimeout(resolve, 100));
 
       const form = document.createElement("form");
-      form.action = "https://formsubmit.co/feang_c0@hotmail.com";
+      form.action = "https://formsubmit.co/marianasvillageco@gmail.com";
       form.method = "post";
       form.style.display = "none";
 
@@ -107,7 +107,7 @@ const DatingPage: React.FC = () => {
               {...register("cellphone", {
                 required: "Phone number is required",
                 pattern: {
-                  value: /^\+?[1-9]\d{6,14}(?:[-\s]?\d{1,4}){0,3}$/,
+                  value: /^\+?[1-9]\d{0,2}(?:[-\s]?\d){6,14}$/,
                   message: "Invalid phone number",
                 },
               })}

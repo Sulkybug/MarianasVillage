@@ -15,6 +15,15 @@
   margin-top: 30px;
   color: aliceblue;
   font-weight: bold;
+  text-shadow: rgba(66, 25, 6, 0.897) 2px 0px 10px;
+}
+
+.datingFormDescription {
+  color: aliceblue;
+  margin-top: 10px;
+  width: 85%;
+  text-align: center;
+  text-shadow: rgba(66, 25, 6, 0.897) 2px 0px 10px;
 }
 
 .formBox {
@@ -88,13 +97,7 @@ legend {
   width: 100%;
   color: aliceblue;
   margin: 2px 0px 5px 0px;
-}
-
-.datingFormDescription {
-  color: aliceblue;
-  margin-top: 10px;
-  width: 85%;
-  text-align: center;
+  text-shadow: rgba(66, 25, 6, 0.897) 2px 0px 10px;
 }
 
 input,

@@ -2,7 +2,7 @@ import React from "react";
 import { createRoot } from "react-dom/client";
 import { HashRouter, Routes, Route } from "react-router-dom";
 import Home from "./App.tsx";
-import AboutUsPage from "./Pages/AboutUsPage.tsx";
+import AboutUsPage from "./Pages/AboutUs/AboutUsPage.tsx";
 import DatingPage from "./Pages/Dating/DatingPage.tsx";
 
 createRoot(document.getElementById("root")!).render(
