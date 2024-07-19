@@ -126,6 +126,17 @@ select:hover {
   background-color: rgba(255, 254, 254, 0.849);
 }
 
+.button-disabled {
+  background-color: grey;
+}
+
+.button-disabled:hover {
+  background-color: grey;
+  scale: 1;
+  font-weight: normal;
+  cursor: auto;
+}
+
 @media only screen and (max-width: 650px) {
   #dating {
     height: 120vh;

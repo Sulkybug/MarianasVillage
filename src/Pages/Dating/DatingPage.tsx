@@ -187,11 +187,10 @@ const DatingPage: React.FC = () => {
             ></textarea>
             <button
               type="submit"
-              className="sendMessage"
+              className={`sendMessage ${loading ? "button-disabled" : ""}`}
               disabled={loading || isSubmitting}
             >
               {loading || isSubmitting ? "Loading..." : "Send Message"}
-              &thinsp;
             </button>
           </form>
         </div>
