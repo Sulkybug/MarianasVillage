@@ -51,10 +51,19 @@
     padding: 0px 50px 0px 50px;
   }
   .notAvailableTitle {
-    font-size: 40px;
+    font-size: 30px;
+  }
+
+  .notAvailableImg {
+    width: 150px;
   }
 
   .notAvailableDescription {
-    font-size: 20px;
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .goHome {
+    font-size: 18px;
   }
 }
