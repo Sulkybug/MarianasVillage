@@ -98,9 +98,15 @@ html {
     background-size: cover;
     background-position: center;
   }
+
+  .AboutUsTitle {
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
   .AboutDescription {
     height: 50vh;
     width: 80%;
-    font-size: 18px;
+    font-size: 15px;
+    text-align: center;
   }
 }
