@@ -27,7 +27,7 @@ const Investors: React.FC = () => {
           promise growth in Colombia's thriving economy. Join us to expand our
           business and be part of a dynamic and growing venture.
         </p>
-        <HashLink smooth to="/dating">
+        <HashLink smooth to="/investing/#investing">
           <button className="moreAboutButton">Learn more</button>
         </HashLink>
       </div>

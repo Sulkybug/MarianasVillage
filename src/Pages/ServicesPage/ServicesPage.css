@@ -1,11 +1,11 @@
-#countrySide {
+#services {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
   width: 100vw;
-  background: linear-gradient(rgba(0, 25, 8, 0), rgba(0, 25, 10, 0.589)),
-    url(/img/lake-7344033_1280.jpg);
+  background: linear-gradient(rgba(0, 25, 8, 0.144), rgba(0, 25, 10, 0.699)),
+    url(/img/pineapples-1853466_1280.jpg);
   background-size: cover;
   background-position: center;
 }

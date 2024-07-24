@@ -4,19 +4,18 @@ import Navbar from "../../Components/Navbar/Navbar";
 import Footer from "../../Components/Footer/Footer";
 import LateralBar from "../../Components/LateralBar/LateralBar";
 import NotAvailable from "../../Components/NotAvailable/NotAvailable";
-import "./HousingPages.css";
+import "./ServicesPage.css";
 
-const HousingPage: React.FC = () => {
+const ServicesPage: React.FC = () => {
   const [onScroll, SetOnScroll] = useState<string>("");
 
   window.onscroll = function () {
     SetOnScroll(window.pageYOffset > 0 ? "scroll-nav" : "");
   };
-
   return (
     <div>
       <Navbar onScroll={onScroll} />
-      <div id="housing">
+      <div id="services">
         <NotAvailable />
       </div>
       <LateralBar />
@@ -25,4 +24,4 @@ const HousingPage: React.FC = () => {
   );
 };
 
-export default HousingPage;
+export default ServicesPage;

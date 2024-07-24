@@ -15,10 +15,10 @@ const AboutUsPage: React.FC = () => {
     <div>
       <Navbar onScroll={onScroll} />
       <div className="AboutBox">
-        <div className="AboutPage">
-          <h1 className="AboutUsTitle">About</h1>
-
+        <div className="AboutPage"></div>
+        <div className="descriptionBox">
           <p className="AboutDescription">
+            <h1 className="AboutUsTitle">About</h1>
             Welcome to your premier destination for affordable living and
             investment opportunities in the heart of Medellín, Colombia.
             Offering tailored housing solutions and a range of seamless

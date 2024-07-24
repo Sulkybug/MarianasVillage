@@ -31,7 +31,7 @@ const LateralBar: React.FC = () => {
         </a>
 
         <a
-          href="mailto:marianaisvillage@gmail.com"
+          href="mailto:marianasvillageco@gmail.com"
           className="mail"
           target="_blank"
         >

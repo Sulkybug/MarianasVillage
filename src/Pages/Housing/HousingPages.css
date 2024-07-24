@@ -1,0 +1,11 @@
+#housing {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(rgba(0, 25, 8, 0.158), rgba(0, 25, 10, 0.589)),
+    url(/img/texture-1504364_1280.jpg);
+  background-size: cover;
+  background-position: center;
+}

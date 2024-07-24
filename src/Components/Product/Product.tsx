@@ -13,7 +13,7 @@ const Product: React.FC = () => {
     <div id="product">
       <div className="products">
         <div className="SectionOne">
-          <HashLink smooth to="/housing">
+          <HashLink smooth to="/housing/#housing">
             <div className="productBox">
               <h2 className="productDescription">Housing</h2>
               <LazyLoad height={200} offset={100}>
@@ -24,7 +24,7 @@ const Product: React.FC = () => {
               </LazyLoad>
             </div>
           </HashLink>
-          <HashLink smooth to="/services">
+          <HashLink smooth to="/services/#services">
             <div className="productBox">
               <h2 className="productDescription">Services</h2>
               <LazyLoad height={200} offset={100}>
@@ -48,7 +48,7 @@ const Product: React.FC = () => {
               </LazyLoad>
             </div>
           </HashLink>
-          <HashLink smooth to="/countryside">
+          <HashLink smooth to="/countryside/#countrySide">
             <div className="productBox">
               <h2 className="productDescription">Country Side</h2>
               <LazyLoad height={200} offset={100}>

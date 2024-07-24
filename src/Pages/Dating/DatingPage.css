@@ -13,17 +13,17 @@
 
 .titleformDating {
   margin-top: 30px;
-  color: aliceblue;
+  color: antiquewhite;
   font-weight: bold;
-  text-shadow: rgba(66, 25, 6, 0.897) 2px 0px 10px;
+  text-shadow: rgba(0, 0, 0, 0.897) 2px 0px 10px;
 }
 
 .datingFormDescription {
-  color: aliceblue;
+  color: antiquewhite;
   margin-top: 10px;
   width: 85%;
   text-align: center;
-  text-shadow: rgba(66, 25, 6, 0.897) 2px 0px 10px;
+  text-shadow: rgba(0, 0, 0, 0.897) 2px 0px 10px;
 }
 
 .formBox {
@@ -36,8 +36,8 @@
 }
 
 hr {
-  width: 95%;
-  color: aliceblue;
+  width: 85%;
+  color: antiquewhite;
 }
 
 form {
@@ -95,9 +95,9 @@ textarea {
 
 legend {
   width: 100%;
-  color: aliceblue;
+  color: antiquewhite;
   margin: 2px 0px 5px 0px;
-  text-shadow: rgba(66, 25, 6, 0.897) 2px 0px 10px;
+  text-shadow: rgba(0, 0, 0, 0.897) 2px 0px 10px;
 }
 
 input,
